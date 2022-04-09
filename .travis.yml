@@ -21,7 +21,7 @@ deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: f145b020-6a32-44a4-b79a-c068e30a059b # desde heroku
+  api_key:  # desde heroku
   app: store-backend-paucast
   on:
     repo: Oen844/platzi-store-backend
