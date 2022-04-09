@@ -12,11 +12,11 @@ git:
   depth: 3
 
 script:
-  - yarn start
+  - yarn test
 
 notifications:
   email:
-    reciepients:
+    recipients:
       - papau84@gmail.com   
     on_success: always
     on_failure: always
