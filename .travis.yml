@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
+git:
+  depth: 3
+script:
+  - yarm test
+notifications:
+  email:
+    reciepients:
+      - papau84@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: f145b020-6a32-44a4-b79a-c068e30a059b
+  app: store-backend-paucast
+  on: 
+    repo: Oen844/platzi-store-backend
