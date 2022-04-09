@@ -1,23 +1,19 @@
- language: node_js
-
+lenguage: node_js
 cache:
   directories:
     - node_modules
     - ~/.npm
-
 node_js:
   - '12'
-
 git:
   depth: 3
-
 script:
   - yarn test
-
 notifications:
   email:
     recipients:
-      - papau84@gmail.com   
+      - papau84@gmail.com
+      - papau84@hotmail.com
     on_success: always
     on_failure: always
 
